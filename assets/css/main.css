@@ -1,0 +1,38 @@
+
+.avatar{
+    margin-top: 3rem;
+    border-radius: 100px;
+}
+
+.imagen {
+    display: grid;
+    place-items: center;
+}
+
+.iconos{
+    margin-left: 20%;
+    display: inline-flex;
+    place-items: center;
+    
+}
+
+.info {
+    display: grid;
+    place-items: center;
+}
+.data{
+    margin-top: -10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.informacion{
+    margin-top: 100px;
+    margin-left: 300px;
+    justify-content: center;
+    background-color: rgb(248, 247, 244);
+    height: 350px;
+    width: 50%;
+}
+.iconos1{
+    margin-left: 30px;
+}
