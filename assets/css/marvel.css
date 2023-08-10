@@ -2,4 +2,19 @@
     width: 200px;
     height: 200px;
     margin-top: 40px;
+    align-items: center;
+}
+#resultados{
+    width: 100%;
+    height: max-content;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#resultados div{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+
 }

@@ -34,6 +34,7 @@ let input = document.getElementById('buscar');
 let buscar = document.getElementById('boton-busqueda');
 let limpiar = document.getElementById('limpiar-busqueda');
 let informacionResultado = document.getElementById('resultados');
+let nombre = document.getElementById('nombre');
 
 buscar.addEventListener('click', Marvel);
 limpiar.addEventListener('click', limpiarBusqueda);
@@ -47,18 +48,20 @@ function Marvel(){
     fetch(url)
         .then(response => response.json())
         .then(json => {
-            informacionResultado.innerHTML = '';
             
             let results = json.data.results;
             results.map(item => {
+                let personaje = document.createElement('div');
                 let img = document.createElement('img');
                 img.src = item.thumbnail.path + '.' + item.thumbnail.extension;
                 img.classList.add('imagenes');
-                informacionResultado.appendChild(img);
+                personaje.appendChild(img);
                 
                 let name = document.createElement('h3');
                 name.textContent = item.name;
-                informacionResultado.appendChild(name);
+                personaje.appendChild(name);
+
+                informacionResultado.appendChild (personaje);
             });
         })
 }
